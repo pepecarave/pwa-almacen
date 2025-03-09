@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let request = indexedDB.open("almacenDB", 1);
 
     request.onupgradeneeded = event => {
-        let db = event.target.result;
+        db = event.target.result;
         if (!db.objectStoreNames.contains("ubicaciones")) {
             db.createObjectStore("ubicaciones", { keyPath: "id", autoIncrement: true });
         }
@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     request.onsuccess = event => {
         db = event.target.result;
-        actualizarListas(); // Cargar datos después de abrir la base
     };
 
     request.onerror = event => {
