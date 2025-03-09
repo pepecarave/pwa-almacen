@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DESPLIEGUE</h1>
+    </header>
+
+    <section>
+        <h2>Listado de Elementos</h2>
+        <table id="listado-elementos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Ubicación</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Ubicaciones y sus Elementos</h2>
+        <table id="listado-ubicaciones">
+            <thead>
+                <tr>
+                    <th>Ubicación</th>
+                    <th>Elementos</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <button onclick="location.href='index.html'">Volver</button>
+
+    <script src="db.js"></script>
+    <script src="listado.js"></script>
+</body>
+</html>
