@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despliegue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>DESPLIEGUE</h1>
+    </header>
+    
+    <section>
+        <h2>Ubicaciones</h2>
+        <input type="text" id="ubicacion-nombre" placeholder="Nombre de la ubicación">
+        <input type="text" id="ubicacion-comentarios" placeholder="Comentarios">
+        <button id="agregar-ubicacion">Agregar Ubicación</button>
+        
+        <table id="tabla-ubicaciones">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Comentarios</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Elementos</h2>
+        <input type="text" id="elemento-nombre" placeholder="Nombre del elemento">
+        <select id="elemento-ubicacion"></select>
+        <input type="number" id="elemento-cantidad" placeholder="Cantidad">
+        <button id="agregar-elemento">Agregar Elemento</button>
+        
+        <table id="tabla-elementos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Ubicación</th>
+                    <th>Cantidad</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <button onclick="location.href='listado.html'">Ver Listado</button>
+
+    <script src="db.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
